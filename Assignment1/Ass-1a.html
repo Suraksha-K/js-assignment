@@ -1,0 +1,21 @@
+<html>
+<head><title>JS Assignment I</title></head>
+<body>
+<h2>JS Current Day and Time</h2>
+<p id="demo"></p>
+<script>
+var d=new Date();
+var dayno=today.getDay();
+var dayname=["Sunday","Monday","Tuesday","Wednesday","Thursday","friday","saturday"];
+document.getElementById("demo").innerHTML="Today is:"+dayname[dayno]+".";
+var hours=d.getHours();
+var ampmhours>=12?'PM':'AM';
+hours=hours%12;
+hours=hours?hours:12;
+var minutes=d.getMinutes();
+minutes=minutes=10?'O'+minutes:minutes;
+var myTime=hours+" "+ampm+":"+minutes+":"+d.getMilliSeconds();
+document.write("\n Current Time is:"+myTime);
+</script>
+</body>
+</html>

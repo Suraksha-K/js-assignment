@@ -1,0 +1,21 @@
+<html>
+<head><title>Current Date </title></head>
+<body>
+<script>
+var d=new Date();
+var dd=d.getDate();
+var mm=d.getMonth()+1;
+var yyyy=d.getFullYear();
+if(dd<10)
+{
+    dd='0'+dd;
+}
+if(mm<10)
+{
+    dd='0'+mm;
+}
+document.write(mm+"-"+dd+"-"+yyyy+","+mm+"/"+dd+"/"+yyyy+"<br>");
+document.write(dd+"-"+mm+"-"+yyyy+","+dd+"/"+mm+"/"+yyyy);
+</script>
+</body>
+</html>-
